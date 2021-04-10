@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Github</string>
+    <string name="name">Name</string>
+    <string name="repository">Repository</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+
+    <string name="tab1">Followers</string>
+    <string name="tab2">Following</string>
+    <string name="greet">Hi! please find the user you want</string>
+    <string name="find_your_connection">Find your connection…</string>
+    <string name="copyright">Build with ♡ By Luthfi Daffa Prabowo 2021©Dicoding</string>
+    <string name="toolbar">User\'s Profile</string>
+    <string name="reminder">Click this button so I can remind you to add more connections every day</string>
+    <string name="reminder_sentence">Set reminder at 09:00</string>
+</resources>

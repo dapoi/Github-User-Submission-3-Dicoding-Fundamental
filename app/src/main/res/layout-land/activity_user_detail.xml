@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    tools:context=".view.UserDetailActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_detail"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:src="@color/cardview_light_background" />
+
+    <TextView
+        android:id="@+id/name_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/img_detail"
+        app:layout_constraintTop_toBottomOf="@+id/img_detail"
+        tools:text="@string/name" />
+
+    <ImageView
+        android:id="@+id/username_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_username"
+        app:layout_constraintStart_toStartOf="@+id/name_detail"
+        app:layout_constraintTop_toBottomOf="@+id/name_detail"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/username_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/username_icon"
+        app:layout_constraintStart_toEndOf="@+id/username_icon"
+        tools:text="Username" />
+
+    <TextView
+        android:id="@+id/followers_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/followers"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/img_detail"
+        app:layout_constraintTop_toTopOf="@+id/img_detail" />
+
+    <TextView
+        android:id="@+id/followers_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/followers_title"
+        app:layout_constraintStart_toStartOf="@+id/followers_title"
+        app:layout_constraintTop_toBottomOf="@+id/followers_title"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/following_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="@string/following"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/followers_title"
+        app:layout_constraintTop_toTopOf="@+id/followers_title" />
+
+    <TextView
+        android:id="@+id/following_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/following_title"
+        app:layout_constraintStart_toStartOf="@+id/following_title"
+        app:layout_constraintTop_toBottomOf="@+id/following_title"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/repo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="@string/repository"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/following_title"
+        app:layout_constraintTop_toTopOf="@+id/following_title" />
+
+    <TextView
+        android:id="@+id/repo_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/repo_title"
+        app:layout_constraintStart_toStartOf="@+id/repo_title"
+        app:layout_constraintTop_toBottomOf="@+id/repo_title"
+        tools:text="0" />
+
+    <ImageView
+        android:id="@+id/company_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_place"
+        app:layout_constraintBottom_toBottomOf="@+id/img_detail"
+        app:layout_constraintStart_toStartOf="@+id/followers_title"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/company_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/company_icon"
+        app:layout_constraintStart_toEndOf="@+id/company_icon"
+        tools:ignore="HardcodedText"
+        tools:text="Company" />
+
+    <ImageView
+        android:id="@+id/location_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_location"
+        app:layout_constraintStart_toStartOf="@+id/username_icon"
+        app:layout_constraintTop_toBottomOf="@+id/username_icon"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/location_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/location_icon"
+        app:layout_constraintStart_toEndOf="@+id/location_icon"
+        tools:text="Location" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/location_icon"
+        app:layout_constraintTop_toBottomOf="@+id/location_detail"
+        app:tabBackground="@drawable/background_tab"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed"
+        app:tabRippleColor="@null"
+        app:tabSelectedTextColor="@color/back_color"
+        app:tabTextColor="@color/white"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_follow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tabs"
+        app:layout_constraintStart_toStartOf="@+id/tabs"
+        app:layout_constraintTop_toBottomOf="@+id/tabs" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

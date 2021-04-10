@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Github ku</string>
+    <string name="name">Nama</string>
+    <string name="repository">Penyimpanan</string>
+    <string name="following">Mengikuti</string>
+    <string name="followers">Pengikut</string>
+
+    <string name="tab1">Pengikut</string>
+    <string name="tab2">Mengikuti</string>
+    <string name="greet">Hai! silahkan cari pengguna yang anda inginkan</string>
+    <string name="find_your_connection">Temukan koneksimu…</string>
+    <string name="copyright">Build with ♡ By Luthfi Daffa Prabowo 2021©Dicoding</string>
+    <string name="toolbar">Profil Pengguna</string>
+    <string name="reminder">Aktifkan tombol berikut agar bisa mengingatkan untuk menambah koneksi mu setiap hari</string>
+    <string name="reminder_sentence">Pengingat pukul 09:00</string>
+</resources>
