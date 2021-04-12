@@ -49,6 +49,8 @@ class UserDetailActivity : AppCompatActivity() {
         val saveData = Bundle()
         saveData.putString(USERNAME_PACKAGE, gitUsername)
 
+        // jangan lupa menghapus argumen ViewModelProvider.NewInstanceFactory, karena kita
+        // tidak membutuhkannya akibat penggunaan AndroidViewModel
         detailViewModel = ViewModelProvider(this)
             .get(UserDetailViewModel::class.java)
         detailViewModel.setUserDetail(gitUsername.toString())

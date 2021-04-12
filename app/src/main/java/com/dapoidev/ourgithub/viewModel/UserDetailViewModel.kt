@@ -16,6 +16,9 @@ import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Response
 
+// jangan lupa mengganti view model menjadi AndroidViewModel dan tambahkan modulnya
+// fungsinya sebagai instance dari konteks. Namun jika aplikasi memiliki beberapa instance, maka
+// menggunakan AndroidViewModel tidak disarankan
 class UserDetailViewModel(app: Application) : AndroidViewModel(app) {
     val userDetail = MutableLiveData<UserDetail>()
 
